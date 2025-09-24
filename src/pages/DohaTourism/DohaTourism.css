@@ -1,0 +1,221 @@
+/* ================= Base Page ================= */
+.doha-tourism-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* ================= Hero Section ================= */
+.doha-tourism-hero {
+  position: relative;
+  height: 75vh;
+  background: url("https://images.unsplash.com/photo-1528901166007-3784c7dd3653")
+    no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doha-tourism-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.doha-tourism-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 750px;
+  padding: 20px;
+}
+
+.doha-tourism-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.doha-tourism-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.doha-tourism-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= Buttons ================= */
+.doha-tourism-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+}
+
+.doha-tourism-btn-primary {
+  background: #8d1b3d;
+  color: #fff;
+}
+.doha-tourism-btn-primary:hover {
+  background: #721330;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(141, 27, 61, 0.4);
+}
+
+.doha-tourism-btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.doha-tourism-btn-outline:hover {
+  background: #fff;
+  color: #8d1b3d;
+  border-color: #8d1b3d;
+}
+
+.doha-tourism-btn-mini {
+  margin-top: 12px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border: 2px solid #8d1b3d;
+  color: #8d1b3d;
+  background: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.doha-tourism-btn-mini:hover {
+  background: #8d1b3d;
+  color: #fff;
+}
+
+/* ================= Sections ================= */
+.doha-tourism-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.doha-tourism-section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #8d1b3d;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= Grid & Cards ================= */
+.doha-tourism-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.doha-tourism-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.doha-tourism-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.doha-tourism-card-content {
+  padding: 18px;
+}
+
+.doha-tourism-card-content h3 {
+  font-size: 1.4rem;
+  color: #8d1b3d;
+  margin-bottom: 0.6rem;
+}
+
+.doha-tourism-card-content p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.doha-tourism-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= CTA Section ================= */
+.doha-tourism-cta {
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #fff, #fdf3f6);
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.doha-tourism-cta h2 {
+  font-size: 2rem;
+  color: #8d1b3d;
+  margin-bottom: 15px;
+}
+
+.doha-tourism-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.doha-tourism-cta-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 767px) {
+  .doha-tourism-hero {
+    height: 60vh;
+  }
+  .doha-tourism-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .doha-tourism-hero-content p {
+    font-size: 1rem;
+  }
+  .doha-tourism-btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+  .doha-tourism-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doha-tourism-hero {
+    height: 55vh;
+  }
+  .doha-tourism-hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .doha-tourism-hero-content p {
+    font-size: 0.9rem;
+  }
+  .doha-tourism-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}

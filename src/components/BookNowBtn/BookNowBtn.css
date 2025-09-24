@@ -1,0 +1,40 @@
+.book-btn {
+  background: linear-gradient(135deg, #a62045, #d6336c); /* gradient maroon-pink */
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 5px; /* more rounded pill shape */
+  padding: 12px 28px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* hover effects */
+.book-btn:hover {
+  transform: translateY(-3px) scale(1.07);
+  background: linear-gradient(135deg, #8b1b39, #b92a58); /* darker hover gradient */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* ripple / shine effect */
+.book-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75px;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: skewX(-20deg);
+  transition: 0.5s;
+}
+
+.book-btn:hover::after {
+  left: 120%;
+}

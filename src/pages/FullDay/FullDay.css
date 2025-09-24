@@ -1,0 +1,230 @@
+/* Base Page */
+.ds-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* Hero */
+.ds-hero {
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ds-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.ds-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 750px;
+  padding: 20px;
+}
+.ds-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+.ds-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.ds-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+/* .ds-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.ds-btn-primary {
+  background: #8d1b3d;
+  color: #fff;
+}
+.ds-btn-primary:hover {
+  background: #721330;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(141, 27, 61, 0.4);
+}
+.ds-btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.ds-btn-outline:hover {
+  background: #fff;
+  color: #8d1b3d;
+  border-color: #8d1b3d;
+} */
+
+/* Sections */
+.ds-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+.ds-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #8d1b3d;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.ds-overview p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Highlights */
+.ds-highlights ul {
+  list-style: none;
+  max-width: 800px;
+  margin: auto;
+  padding: 0;
+}
+.ds-highlights li {
+  padding: 12px;
+  margin: 8px 0;
+  background: #f9f9f9;
+  border-left: 5px solid #8d1b3d;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.ds-highlights li:hover {
+  background: #fff1f6;
+  transform: translateX(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Inclusions */
+.ds-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.ds-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  border-top: 4px solid #8d1b3d;
+}
+.ds-card h3 {
+  color: #8d1b3d;
+  margin-bottom: 10px;
+}
+.ds-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gallery */
+.ds-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.ds-gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ds-gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA */
+.ds-cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #fff, #fdf3f6);
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+}
+.ds-cta h2 {
+  color: #8d1b3d;
+}
+.ds-cta-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= Responsive ================= */
+
+/* Tablet */
+@media (max-width: 1199px) {
+  .ds-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .ds-hero-content p {
+    font-size: 1.1rem;
+  }
+  .ds-container {
+    margin: 40px auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .ds-hero {
+    height: 65vh;
+  }
+  .ds-hero-content h1 {
+    font-size: 2rem;
+  }
+  .ds-hero-content p {
+    font-size: 1rem;
+  }
+  .ds-btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+  .ds-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smallest Devices */
+@media (max-width: 480px) {
+  .ds-hero {
+    height: 55vh;
+    padding: 0 10px;
+  }
+  .ds-hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .ds-hero-content p {
+    font-size: 0.9rem;
+  }
+  .ds-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  .ds-container h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,201 @@
+/* ================= Base Page ================= */
+.qtrpkg-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* ================= Hero Section ================= */
+.qtrpkg-hero {
+  position: relative;
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qtrpkg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.qtrpkg-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 750px;
+  padding: 20px;
+}
+
+.qtrpkg-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.qtrpkg-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.qtrpkg-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= Buttons ================= */
+.qtrpkg-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+}
+
+.qtrpkg-btn-primary {
+  background: #8d1b3d;
+  color: #fff;
+}
+.qtrpkg-btn-primary:hover {
+  background: #721330;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(141, 27, 61, 0.4);
+}
+
+.qtrpkg-btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.qtrpkg-btn-outline:hover {
+  background: #fff;
+  color: #8d1b3d;
+  border-color: #8d1b3d;
+}
+
+/* ================= Sections ================= */
+.qtrpkg-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.qtrpkg-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #8d1b3d;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= Grid & Cards ================= */
+.qtrpkg-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.qtrpkg-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  text-align: left;
+}
+
+.qtrpkg-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.qtrpkg-card h3 {
+  font-size: 1.4rem;
+  color: #8d1b3d;
+  margin: 15px;
+}
+
+.qtrpkg-card p {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 15px 15px;
+}
+
+.qtrpkg-card .qtrpkg-btn {
+  margin: 0 15px 15px;
+}
+
+.qtrpkg-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= CTA Section ================= */
+.qtrpkg-cta {
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #fff, #fdf3f6);
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.qtrpkg-cta h2 {
+  font-size: 2rem;
+  color: #8d1b3d;
+  margin-bottom: 15px;
+}
+
+.qtrpkg-cta-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 767px) {
+  .qtrpkg-hero {
+    height: 60vh;
+  }
+  .qtrpkg-hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .qtrpkg-hero-content p {
+    font-size: 1rem;
+  }
+  .qtrpkg-btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+  .qtrpkg-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .qtrpkg-hero {
+    height: 55vh;
+  }
+  .qtrpkg-hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .qtrpkg-hero-content p {
+    font-size: 0.9rem;
+  }
+  .qtrpkg-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
