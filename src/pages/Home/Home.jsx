@@ -13,7 +13,7 @@ const Home = () => {
         style={{ backgroundImage: `url(${assets.header_img})` }}
       >
         <section className="home-hero">
-          <h1 className="home-hero-title">Adventure Time Tourism</h1>
+          <h1 className="home-hero-title">My name is shoukat</h1>
           <p className="home-hero-text">
             Adventure Time Tourism is one of the best tour operators in Qatar.
             Our professional guides ensure you experience Qatar’s true beauty
