@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
   const encodedMessage = encodeURIComponent(message);
 
   // WhatsApp link
-  const whatsappLink = `https://wa.me/0097450715252?text=${encodedMessage}`;
+  const whatsappLink = `https://wa.me/+97450715252?text=${encodedMessage}`;
 
   return (
     <a
