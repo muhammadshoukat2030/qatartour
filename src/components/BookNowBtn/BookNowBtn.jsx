@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import "./BookNowBtn.css";
 
 function BookNowBtn() {
-  const handleClick = () => {
-    window.scrollTo(0, 0); // page top pe scroll karega
+ const handleClick = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // smooth scroll karega
+      });
+    }, 200); // 1s delay
   };
 
   return (

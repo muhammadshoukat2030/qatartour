@@ -2,9 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import { assets } from "../../assets/assets";
-import BookNowBtn from "../../components/BookNowBtn/BookNowBtn";
+// import BookNowBtn from "../../components/BookNowBtn/BookNowBtn";
 
 const Home = () => {
+  const handleClick = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // smooth scroll karega
+      });
+    }, 200); // 1s delay
+  };
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -190,7 +198,13 @@ const Home = () => {
             What are the key landmarks and attractions included in Gulf Dunes
             Tourism’s Doha city tours?
           </summary>
-          <p>Gulf Dunes Tourism covers all the must-visit attractions of Doha including the Doha Corniche, Souq Waqif, Katara Cultural Village, Pearl-Qatar, Lusail City, and the Museum of Islamic Art. These tours give travelers a perfect mix of modern architecture, cultural heritage, and scenic views of the city.</p>
+          <p>
+            Gulf Dunes Tourism covers all the must-visit attractions of Doha
+            including the Doha Corniche, Souq Waqif, Katara Cultural Village,
+            Pearl-Qatar, Lusail City, and the Museum of Islamic Art. These tours
+            give travelers a perfect mix of modern architecture, cultural
+            heritage, and scenic views of the city.
+          </p>
         </details>
 
         <details>
@@ -199,7 +213,11 @@ const Home = () => {
             Tourism?
           </summary>
           <p>
-           Booking with Gulf Dunes Tourism is simple and hassle-free. You can reserve your Doha tour online, via WhatsApp(97450715252) by email (gulfdunestourism@gmail.com )or through a direct phone call. Flexible booking options make it easy for tourists to confirm their trips in just a few minutes.
+            Booking with Gulf Dunes Tourism is simple and hassle-free. You can
+            reserve your Doha tour online, via WhatsApp(97450715252) by email
+            (gulfdunestourism@gmail.com )or through a direct phone call.
+            Flexible booking options make it easy for tourists to confirm their
+            trips in just a few minutes.
           </p>
         </details>
 
@@ -209,23 +227,38 @@ const Home = () => {
             by Gulf Dunes Tourism for exploring Doha?
           </summary>
           <p>
-            Gulf Dunes Tourism offers a wide range of packages such as half-day city tours, full-day tours, desert safari adventures, cultural experiences, and private customized trips. Each package is designed to highlight the best of Doha while providing comfort, convenience, and memorable experiences.
+            Gulf Dunes Tourism offers a wide range of packages such as half-day
+            city tours, full-day tours, desert safari adventures, cultural
+            experiences, and private customized trips. Each package is designed
+            to highlight the best of Doha while providing comfort, convenience,
+            and memorable experiences.
           </p>
         </details>
 
         <details>
           <summary>
-             In what ways do Gulf Dunes Tourism’s Doha tours stand out compared to other travel companies?
+            In what ways do Gulf Dunes Tourism’s Doha tours stand out compared
+            to other travel companies?
           </summary>
           <p>
-            What makes Gulf Dunes Tourism unique is the combination of professional tour guides, luxury vehicles, personalized itineraries, and authentic Qatari experiences. Unlike generic tours, Gulf Dunes focuses on delivering a premium and memorable journey for every traveler.
+            What makes Gulf Dunes Tourism unique is the combination of
+            professional tour guides, luxury vehicles, personalized itineraries,
+            and authentic Qatari experiences. Unlike generic tours, Gulf Dunes
+            focuses on delivering a premium and memorable journey for every
+            traveler.
           </p>
         </details>
 
         <details>
-          <summary>How can I reach Gulf Dunes Tourism to ask questions or get more details about their Doha tour services?</summary>
+          <summary>
+            How can I reach Gulf Dunes Tourism to ask questions or get more
+            details about their Doha tour services?
+          </summary>
           <p>
-           For inquiries, you can contact Gulf Dunes Tourism by phone, WhatsApp, email, or through the official website inquiry form. Their customer support team is available to assist with booking, package details, and any special requests.
+            For inquiries, you can contact Gulf Dunes Tourism by phone,
+            WhatsApp, email, or through the official website inquiry form. Their
+            customer support team is available to assist with booking, package
+            details, and any special requests.
           </p>
         </details>
       </section>
@@ -250,7 +283,7 @@ const Home = () => {
         <p>
           Book your journey today and let us make your adventure truly special.
         </p>
-        <Link to="/contact" className="home-btn-large">
+        <Link to="/contact" className="home-btn-large" onClick={handleClick}>
           Book Now
         </Link>
       </section>

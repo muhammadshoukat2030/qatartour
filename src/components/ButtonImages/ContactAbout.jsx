@@ -4,8 +4,13 @@ import { PlaneTakeoff, Phone } from "lucide-react";
 import "./ContactAbout.css";
 
 const ContactAbout = () => {
-  const handleClick = () => {
-    window.scrollTo(0, 0); // page top pe scroll karega
+ const handleClick = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // smooth scroll karega
+      });
+    }, 200); // 1s delay
   };
 
   return (
