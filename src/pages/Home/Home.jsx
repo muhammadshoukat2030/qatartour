@@ -15,9 +15,9 @@ const Home = () => {
         <section className="home-hero">
           <h1 className="home-hero-title">Gulf Dunes Tourism</h1>
           <p className="home-hero-text">
-            Gulf Dunes Tourism is one of the best tour operators in Qatar.
-            Our professional guides ensure you experience Qatar’s true beauty
-            with unforgettable tours and luxury service.
+            Gulf Dunes Tourism is one of the best tour operators in Qatar. Our
+            professional guides ensure you experience Qatar’s true beauty with
+            unforgettable tours and luxury service.
           </p>
         </section>
       </div>
@@ -179,6 +179,55 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="faq container">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+          <summary>
+            What are the key landmarks and attractions included in Gulf Dunes
+            Tourism’s Doha city tours?
+          </summary>
+          <p>Gulf Dunes Tourism covers all the must-visit attractions of Doha including the Doha Corniche, Souq Waqif, Katara Cultural Village, Pearl-Qatar, Lusail City, and the Museum of Islamic Art. These tours give travelers a perfect mix of modern architecture, cultural heritage, and scenic views of the city.</p>
+        </details>
+
+        <details>
+          <summary>
+            What is the process for reserving a Doha tour with Gulf Dunes
+            Tourism?
+          </summary>
+          <p>
+           Booking with Gulf Dunes Tourism is simple and hassle-free. You can reserve your Doha tour online, via WhatsApp(97450715252) by email (gulfdunestourism@gmail.com )or through a direct phone call. Flexible booking options make it easy for tourists to confirm their trips in just a few minutes.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Could you share information about the various tour packages offered
+            by Gulf Dunes Tourism for exploring Doha?
+          </summary>
+          <p>
+            Gulf Dunes Tourism offers a wide range of packages such as half-day city tours, full-day tours, desert safari adventures, cultural experiences, and private customized trips. Each package is designed to highlight the best of Doha while providing comfort, convenience, and memorable experiences.
+          </p>
+        </details>
+
+        <details>
+          <summary>
+             In what ways do Gulf Dunes Tourism’s Doha tours stand out compared to other travel companies?
+          </summary>
+          <p>
+            What makes Gulf Dunes Tourism unique is the combination of professional tour guides, luxury vehicles, personalized itineraries, and authentic Qatari experiences. Unlike generic tours, Gulf Dunes focuses on delivering a premium and memorable journey for every traveler.
+          </p>
+        </details>
+
+        <details>
+          <summary>How can I reach Gulf Dunes Tourism to ask questions or get more details about their Doha tour services?</summary>
+          <p>
+           For inquiries, you can contact Gulf Dunes Tourism by phone, WhatsApp, email, or through the official website inquiry form. Their customer support team is available to assist with booking, package details, and any special requests.
+          </p>
+        </details>
       </section>
 
       {/* Mission */}

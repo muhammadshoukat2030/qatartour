@@ -1,6 +1,6 @@
 .call-button {
   position: fixed;
-  bottom: 90px; /* WhatsApp button ke upar aa jaye */
+  bottom: 90px;
   right: 20px;
   background-color: #007bff;
   color: #fff;
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 28px; /* 👈 icon size yahan se control hoga */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   cursor: pointer;
@@ -18,19 +18,40 @@
   text-decoration: none;
 }
 
-/* Hover effect */
 .call-button:hover {
   transform: scale(1.1);
-  background-color: #0056b3; /* darker blue */
+  background-color: #0056b3;
 }
 
-/* Responsive */
-@media (max-width: 500px) {
+/* Tablet */
+@media (max-width: 1024px) {
   .call-button {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-    bottom: 70px; /* WhatsApp ke upar space */
+    width: 50px;
+    height: 50px;
+    font-size: 24px; /* icon chhota */
+    bottom: 80px;
+    right: 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .call-button {
+    width: 45px;
+    height: 45px;
+    font-size: 20px; /* aur chhota */
+    bottom: 75px;
     right: 15px;
+  }
+}
+
+/* Ultra-small */
+@media (max-width: 400px) {
+  .call-button {
+    width: 38px;
+    height: 38px;
+    font-size: 16px; /* aur bhi chhota */
+    bottom: 65px;
+    right: 12px;
   }
 }

@@ -262,6 +262,158 @@
   }
 }
 
+/* FAQ Section */
+.faq {
+  padding: 70px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #8d1b3d;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.faq h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #8d1b3d;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* FAQ Item */
+.faq details {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.faq details:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Summary (question) */
+.faq summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+/* Custom arrow icon */
+.faq summary::after {
+  content: "➕";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #8d1b3d;
+  transition: transform 0.3s;
+}
+
+.faq details[open] summary::after {
+  content: "➖";
+  transform: rotate(180deg);
+}
+
+/* Answer text */
+.faq p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  padding-left: 5px;
+}
+
+/* ========================= */
+/* 📱 Responsive Design */
+/* ========================= */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .faq {
+    padding: 60px 15px;
+  }
+  .faq h2 {
+    font-size: 1.8rem;
+  }
+  .faq summary {
+    font-size: 1.05rem;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .faq {
+    padding: 50px 15px;
+  }
+  .faq h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+  .faq details {
+    padding: 15px;
+  }
+  .faq summary {
+    font-size: 1rem;
+  }
+  .faq p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Ultra-small (≤480px) */
+@media (max-width: 480px) {
+  .faq {
+    padding: 40px 10px;
+  }
+  .faq h2 {
+    font-size: 1.4rem;
+  }
+  .faq summary {
+    font-size: 0.95rem;
+    padding-right: 20px;
+  }
+  .faq summary::after {
+    font-size: 0.9rem;
+  }
+  .faq p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra tiny screens (≤320px) */
+@media (max-width: 320px) {
+  .faq {
+    padding: 30px 8px;
+  }
+  .faq h2 {
+    font-size: 1.2rem;
+  }
+  .faq summary {
+    font-size: 0.85rem;
+  }
+  .faq p {
+    font-size: 0.8rem;
+  }
+}
+
+
 /* ========== Mission Section ========== */
 .home-mission {
   position: relative;
@@ -305,6 +457,7 @@
   margin: 12px 0;
   line-height: 1.6;
 }
+
 
 /* ========== CTA Section ========== */
 .home-cta {
