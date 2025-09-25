@@ -6,13 +6,15 @@
   letter-spacing: 0.5px;
   border: none;
   border-radius: 5px; /* more rounded pill shape */
-  padding: 12px 28px;
+  padding: 11px 25px;
   cursor: pointer;
   position: relative;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  text-decoration: none;  /* 👈 underline remove karega */
+  display: inline-block;  /* 👈 Link ko button jaisa banayega */
 }
 
 /* hover effects */

@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./BookNowBtn.css";
 
 function BookNowBtn() {
+  const handleClick = () => {
+    window.scrollTo(0, 0); // page top pe scroll karega
+  };
+
   return (
-    <button className="book-btn">
+    <Link to="/contact" className="book-btn" onClick={handleClick}>
       Book Now
-    </button>
+    </Link>
   );
 }
 
