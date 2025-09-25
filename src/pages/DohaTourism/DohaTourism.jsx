@@ -8,7 +8,10 @@ const DohaTourism = () => {
   return (
     <div className="doha-tourism-page">
       {/* Hero Section */}
-      <header className="doha-tourism-hero">
+      <header
+        className="doha-tourism-hero"
+        style={{ backgroundImage: `url(${assets.duhatour_0})` }}
+      >
         <div className="doha-tourism-overlay"></div>
         <div className="doha-tourism-hero-content">
           <h1>Doha Tourism</h1>
@@ -32,7 +35,10 @@ const DohaTourism = () => {
                 Explore one of the world's greatest collections of Islamic art
                 in a stunning architectural masterpiece.
               </p>
-              <Link to="/contact" className="doha-tourism-btn doha-tourism-btn-mini">
+              <Link
+                to="/contact"
+                className="doha-tourism-btn doha-tourism-btn-mini"
+              >
                 Explore More
               </Link>
             </div>
@@ -47,7 +53,10 @@ const DohaTourism = () => {
                 Wander through the vibrant alleys of Doha's traditional market,
                 filled with spices, textiles, and culture.
               </p>
-              <Link to="/contact" className="doha-tourism-btn doha-tourism-btn-mini">
+              <Link
+                to="/contact"
+                className="doha-tourism-btn doha-tourism-btn-mini"
+              >
                 Explore More
               </Link>
             </div>
@@ -62,7 +71,10 @@ const DohaTourism = () => {
                 Stroll along the 7-km waterfront promenade with stunning views
                 of the Doha skyline.
               </p>
-              <Link to="/contact" className="doha-tourism-btn doha-tourism-btn-mini">
+              <Link
+                to="/contact"
+                className="doha-tourism-btn doha-tourism-btn-mini"
+              >
                 Explore More
               </Link>
             </div>
@@ -77,32 +89,46 @@ const DohaTourism = () => {
                 Experience Qatar’s cultural hub with theaters, galleries, and
                 restaurants by the sea.
               </p>
-              <Link to="/contact" className="doha-tourism-btn doha-tourism-btn-mini">
+              <Link
+                to="/contact"
+                className="doha-tourism-btn doha-tourism-btn-mini"
+              >
                 Explore More
               </Link>
             </div>
           </div>
 
+          {/* Card 5 */}
           <div className="doha-tourism-card">
-            <img src={assets.pearlisland} alt="Katara Cultural Village" />
+            <img src={assets.pearlisland} alt="Pearl Qatar Island" />
             <div className="doha-tourism-card-content">
               <h3>Pearl Qatar Island</h3>
               <p>
-                The Pearl-Qatar is exquisite man made island near Doha Known for its luxurious marinas, and unique waterfront
+                The Pearl-Qatar is exquisite man made island near Doha Known for
+                its luxurious marinas, and unique waterfront
               </p>
-              <Link to="/contact" className="doha-tourism-btn doha-tourism-btn-mini">
+              <Link
+                to="/contact"
+                className="doha-tourism-btn doha-tourism-btn-mini"
+              >
                 Explore More
               </Link>
             </div>
           </div>
 
+          {/* Card 6 */}
           <div className="doha-tourism-card">
-            <img src={assets.lusailqatar} alt="Katara Cultural Village" />
+            <img src={assets.lusailqatar} alt="Lusail Qatar" />
             <div className="doha-tourism-card-content">
               <h3>Lusail Qatar</h3>
               <p>
-                Lusail City is a futuristic city in Qatar known for its Hub of Luxury and sustainable living.              </p>
-              <Link to="/contact" className="doha-tourism-btn doha-tourism-btn-mini">
+                Lusail City is a futuristic city in Qatar known for its Hub of
+                Luxury and sustainable living.
+              </p>
+              <Link
+                to="/contact"
+                className="doha-tourism-btn doha-tourism-btn-mini"
+              >
                 Explore More
               </Link>
             </div>

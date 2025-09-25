@@ -157,8 +157,7 @@ const NorthTour = () => {
         <h2>What's Excluded</h2>
         <ul>
           <li>Meals / Snacks (unless specified)</li>
-          <li>Personal expenses & shopping</li>
-          <li>Optional activities not mentioned in the itinerary</li>
+          
         </ul>
       </section>
 

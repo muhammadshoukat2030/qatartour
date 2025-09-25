@@ -13,9 +13,9 @@ const Home = () => {
         style={{ backgroundImage: `url(${assets.header_img})` }}
       >
         <section className="home-hero">
-          <h1 className="home-hero-title">Adventure Time Tourism</h1>
+          <h1 className="home-hero-title">Gulf Dunes Tourism</h1>
           <p className="home-hero-text">
-            Adventure Time Tourism is one of the best tour operators in Qatar.
+            Gulf Dunes Tourism is one of the best tour operators in Qatar.
             Our professional guides ensure you experience Qatar’s true beauty
             with unforgettable tours and luxury service.
           </p>
@@ -40,7 +40,8 @@ const Home = () => {
             <div className="home-tour-overlay">
               <h3 className="home-tour-title">West Tour</h3>
               <span className="home-stars">⭐⭐⭐⭐☆</span>
-              <p>3-4 Hours</p>
+              <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/west-tour" className="home-btn">
                 Learn More
               </Link>
@@ -52,7 +53,8 @@ const Home = () => {
             <div className="home-tour-overlay">
               <h3 className="home-tour-title">North Tour</h3>
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
-              <p>3-4 Hours</p>
+              <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/north-tour" className="home-btn">
                 Learn More
               </Link>
@@ -65,6 +67,7 @@ const Home = () => {
               <h3 className="home-tour-title">City Tour</h3>
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/city-tour" className="home-btn">
                 Learn More
               </Link>
@@ -77,6 +80,7 @@ const Home = () => {
               <h3 className="home-tour-title">Desert Half Day</h3>
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/half-day" className="home-btn">
                 Learn More
               </Link>
@@ -88,7 +92,8 @@ const Home = () => {
             <div className="home-tour-overlay">
               <h3 className="home-tour-title">Desert Full Day</h3>
               <span className="home-stars">⭐⭐⭐⭐☆</span>
-              <p>6-8 Hours</p>
+              <p>8 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/full-day" className="home-btn">
                 Learn More
               </Link>
@@ -101,6 +106,7 @@ const Home = () => {
               <h3 className="home-tour-title">Desert Safari in Qatar</h3>
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>6-8 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/desert-safari" className="home-btn">
                 Learn More
               </Link>
@@ -108,11 +114,12 @@ const Home = () => {
           </div>
 
           <div className="home-tour-card">
-            <img src={assets.duhatour_1} alt="Desert Full Day" />
+            <img src={assets.duhatour_0} alt="Doha Tourism" />
             <div className="home-tour-overlay">
               <h3 className="home-tour-title">Doha Tourism</h3>
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
-              <p>6-8 Hours</p>
+              <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/doha-tourism" className="home-btn">
                 Learn More
               </Link>
@@ -120,11 +127,12 @@ const Home = () => {
           </div>
 
           <div className="home-tour-card">
-            <img src={assets.citytour_1} alt="Desert Full Day" />
+            <img src={assets.qatarpackage} alt="Qatar Tour Packages" />
             <div className="home-tour-overlay">
               <h3 className="home-tour-title">Qatar Tour Packages</h3>
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>6-8 Hours</p>
+              <span className="flextime">Flexible</span>
               <Link to="/qatar-packages" className="home-btn">
                 Learn More
               </Link>
@@ -135,7 +143,7 @@ const Home = () => {
 
       {/* Gallery */}
       <section className="home-gallery">
-        <h2 className="home-section-title">Gallery</h2>
+        <h2 className="home-section-title">Our Happy Guests</h2>
         <div className="home-slider">
           <div className="home-slide-track">
             <div className="home-slide">

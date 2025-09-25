@@ -18,6 +18,7 @@ import FullDay from "./pages/FullDay/FullDay";
 import DohaTourism from "./pages/DohaTourism/DohaTourism";
 import QatarPackages from "./pages/QatarPackages/QatarPackages";
 import Contact from "./pages/Contact/Contact";
+import CallButton from "./components/CallButton/CallButton";
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
 
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+      <CallButton/>
       {/* WhatsApp Button har page pe sticky */}
       <WhatsAppButton />
 

@@ -22,7 +22,6 @@ const WestTour = () => {
             you enjoy breathtaking landscapes while exploring Qatar’s rich
             traditions.
           </p>
-
           <div className="hero-actions">
             <ContactAbout />
           </div>
@@ -56,7 +55,7 @@ const WestTour = () => {
           <div className="info-card">
             <h3>Price</h3>
             <p>
-             Starting From QAR 540  (depends on package). Value-packed options
+              Starting From QAR 540 (depends on package). Value-packed options
               for every type of traveler.
             </p>
           </div>
@@ -75,9 +74,7 @@ const WestTour = () => {
               <h3>Pickup & Transit</h3>
               <p>
                 We pick you up from Doha, drive towards the western desert while
-                sharing insights about local culture and landmarks. The journey
-                itself is scenic, giving you a glimpse of Qatar’s contrasts
-                between modern city and timeless desert.
+                sharing insights about local culture and landmarks.
               </p>
             </div>
           </article>
@@ -90,9 +87,7 @@ const WestTour = () => {
               <h3>Mushroom Rock Formation</h3>
               <p>
                 Marvel at the naturally shaped Mushroom Rock, one of Qatar’s
-                most unique geological wonders. Formed by wind and sand over
-                centuries, this striking landmark in the Zekreet desert is a
-                favorite spot for photography and sightseeing.
+                most unique geological wonders.
               </p>
             </div>
           </article>
@@ -102,9 +97,10 @@ const WestTour = () => {
               <p>3</p>
             </div>
             <div className="step-content">
-              <h3>Zeekret Village Drive Through</h3>
+              <h3>Zekreet Village Drive Through</h3>
               <p>
-               Pass through the historic Zekreet Village, a small coastal settlement that reflects the traditional life of the region. The village offers a glimpse of local heritage and the charm of Qatar’s west coast.
+                Pass through the historic Zekreet Village, a small coastal
+                settlement that reflects the traditional life of the region.
               </p>
             </div>
           </article>
@@ -114,13 +110,14 @@ const WestTour = () => {
               <p>4</p>
             </div>
             <div className="step-content">
-              <h3>Richard Serra’s East-West/West-East Sculpture</h3>
+              <h3>Richard Serra’s Sculpture</h3>
               <p>
-                Experience the world-renowned Richard Serra Sculpture, a monumental artwork set in the Brouq Nature Reserve. The towering steel plates stretch across the desert landscape, blending modern art with Qatar’s timeless natural beauty.
+                Experience the world-renowned Richard Serra Sculpture, a
+                monumental artwork set in the Brouq Nature Reserve.
               </p>
             </div>
           </article>
-          
+
           <article className="it-step">
             <div className="step-num">
               <p>5</p>
@@ -129,15 +126,14 @@ const WestTour = () => {
               <h3>Return to Doha</h3>
               <p>
                 Relax on return trip with comfortable drop-off at your hotel or
-                residence. Many travelers find this quiet drive perfect for
-                reflection and sharing photos with friends.
+                residence.
               </p>
             </div>
           </article>
         </div>
       </section>
 
-      {/* What's included */}
+      {/* Includes */}
       <section className="includes container">
         <div className="includes-left">
           <h2>What's included</h2>
@@ -149,21 +145,27 @@ const WestTour = () => {
             <li>Insurance & 24/7 support throughout the trip</li>
           </ul>
         </div>
-
         <div className="includes-right">
-          <h2> Important Guidelines for Your Tour</h2>
+          <h2>Important Guidelines</h2>
           <ul>
-            <li>Please do not throw waste outside the vehicle. Use the provided dustbins or keep your trash with you until the trip ends.</li>
-            <li>Smoking is strictly not allowed inside the vehicle or in public spaces during the tour.</li>
-            <li>For safety reasons, taking photographs of military sites or government buildings is not permitted.</li>
             <li>
-              Private tours can be customized on request with flexible timings
+              Please do not throw waste outside the vehicle. Use provided
+              dustbins.
             </li>
+            <li>
+              Smoking is strictly not allowed inside the vehicle or in public
+              spaces during the tour.
+            </li>
+            <li>
+              For safety reasons, taking photographs of military sites is not
+              permitted.
+            </li>
+            <li>Private tours can be customized on request.</li>
           </ul>
         </div>
       </section>
 
-      {/* Gallery slider */}
+      {/* Gallery */}
       <section className="gallery-section">
         <div className="gallery-slider container">
           <h2 className="container">Gallery</h2>
@@ -175,11 +177,11 @@ const WestTour = () => {
                   <p>Experience Doha’s vibrant city life before the desert.</p>
                 </div>
                 <div className="slide">
-                  <img src={assets.deserthalfday} alt="Gallery 2" />
+                  <img src={assets.pearlisland} alt="Gallery 2" />
                   <p>Golden dunes shining under the Arabian sun.</p>
                 </div>
                 <div className="slide">
-                  <img src={assets.west_2} alt="Gallery 3" />
+                  <img src={assets.duhatour_4} alt="Gallery 3" />
                   <p>West Desert’s unique rock formations and open skies.</p>
                 </div>
                 <div className="slide">
@@ -190,27 +192,9 @@ const WestTour = () => {
                   <img src={assets.west_4} alt="Gallery 5" />
                   <p>Scenic heritage sites of northern Qatar.</p>
                 </div>
-
-                {/* Duplicate for infinite effect */}
                 <div className="slide">
-                  <img src={assets.west_5} alt="Gallery 1" />
+                  <img src={assets.west_5} alt="Gallery 6" />
                   <p>Modern skyline meets ancient traditions.</p>
-                </div>
-                <div className="slide">
-                  <img src={assets.desertfullday} alt="Gallery 2" />
-                  <p>Adventure-filled full-day desert journey.</p>
-                </div>
-                <div className="slide">
-                  <img src={assets.norttour} alt="Gallery 3" />
-                  <p>Hidden gems in Qatar’s northern region.</p>
-                </div>
-                <div className="slide">
-                  <img src={assets.westtour} alt="Gallery 4" />
-                  <p>Unwind with breathtaking desert horizons.</p>
-                </div>
-                <div className="slide">
-                  <img src={assets.deserthalfday} alt="Gallery 5" />
-                  <p>Half-day escape packed with excitement.</p>
                 </div>
               </div>
             </div>
@@ -218,79 +202,64 @@ const WestTour = () => {
         </div>
       </section>
 
-  {/* Related tours */}
-<section className="related container">
-  <h2>Other Tours You May Like</h2>
-  <div className="related-grid">
-    <article className="related-card">
-      <img src={assets.west_1} alt="West Highlights" />
-      <div className="related-body">
-        <h3>West Highlights</h3>
-        <p>
-          A shorter journey highlighting the desert’s best spots, perfect
-          for travelers with limited time.
-        </p>
-        <div className="related-actions">
-          <BookNowBtn/>
-        </div>
-      </div>
-    </article>
+      {/* Related */}
+      <section className="related container">
+        <h2>Other Tours You May Like</h2>
+        <div className="related-grid">
+          <article className="related-card">
+            <img src={assets.west_1} alt="West Highlights" />
+            <div className="related-body">
+              <h3>West Highlights</h3>
+              <p>A shorter journey highlighting the desert’s best spots.</p>
+              <div className="related-actions">
+                <BookNowBtn />
+              </div>
+            </div>
+          </article>
 
-    <article className="related-card">
-      <img src={assets.north_1} alt="North Highlights" />
-      <div className="related-body">
-        <h3>North Highlights</h3>
-        <p>
-          Explore forts, heritage villages and natural beauty of the
-          northern coast.
-        </p>
-        <div className="related-actions">
-          <BookNowBtn/>
-        </div>
-      </div>
-    </article>
+          <article className="related-card">
+            <img src={assets.north_1} alt="North Highlights" />
+            <div className="related-body">
+              <h3>North Highlights</h3>
+              <p>Explore forts, heritage villages and natural beauty.</p>
+              <div className="related-actions">
+                <BookNowBtn />
+              </div>
+            </div>
+          </article>
 
-    <article className="related-card">
-      <img src={assets.citytour_1} alt="City Highlights" />
-      <div className="related-body">
-        <h3>City Highlights</h3>
-        <p>
-          Discover Doha’s iconic skyline, souqs and museums in a guided
-          city tour.
-        </p>
-        <div className="related-actions">
-          <BookNowBtn/>
+          <article className="related-card">
+            <img src={assets.citytour_1} alt="City Highlights" />
+            <div className="related-body">
+              <h3>City Highlights</h3>
+              <p>Discover Doha’s iconic skyline, souqs and museums.</p>
+              <div className="related-actions">
+                <BookNowBtn />
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </article>
-  </div>
-</section>
-
+      </section>
 
       {/* FAQ */}
       <section className="faq container">
         <h2>Frequently Asked Questions</h2>
         <details>
           <summary>What should I bring?</summary>
-          <p>
-            Sunscreen, sunglasses, hat, comfortable shoes, camera and personal
-            meds. Extra water is also a good idea in summer months.
-          </p>
+          <p>Sunscreen, sunglasses, hat, comfortable shoes, camera.</p>
         </details>
-
         <details>
           <summary>Is pickup included?</summary>
           <p>
             Yes — pickup is included from Doha hotels and residences within city
-            limits. Private arrangements can also be made.
+            limits.
           </p>
         </details>
-
         <details>
           <summary>Can we customize the tour?</summary>
           <p>
             Yes — contact us with your requirements and we’ll prepare a custom
-            itinerary. Whether it’s timing, stops or meals, we’ll make it work.
+            itinerary.
           </p>
         </details>
       </section>
@@ -305,14 +274,7 @@ const WestTour = () => {
               desert views, and memories for a lifetime.
             </p>
           </div>
-
           <div className="hero-actions">
-            {/* <Link to="/contact" className="btn btn-primary">
-              Book Now
-            </Link>
-            <Link to="/contact" className="btn btn-outline">
-              Contact Us
-            </Link> */}
             <ContactAbout />
           </div>
         </div>

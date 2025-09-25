@@ -1,15 +1,16 @@
-/* Base Page */
+/* ========== Base Page ========== */
 .ct-page {
   font-family: "Poppins", sans-serif;
   color: #222;
   line-height: 1.7;
   background: #fff;
+  overflow-x: hidden;
 }
 
-/* Hero */
+/* ========== Hero ========== */
 .ct-hero {
   position: relative;
-  height: 85vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -30,12 +31,12 @@
   padding: 20px;
 }
 .ct-hero-content h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
   margin-bottom: 1rem;
   text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 .ct-hero-content p {
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   margin-bottom: 2rem;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -46,24 +47,14 @@
   flex-wrap: wrap;
 }
 
-/* Buttons
-.ct-btn {
-  padding: 12px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
-} */
-
-/* Sections */
+/* ========== Sections ========== */
 .ct-container {
   width: 90%;
   max-width: 1200px;
   margin: 60px auto;
 }
 .ct-container h2 {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
   margin-bottom: 1.2rem;
   text-align: center;
   color: #8d1b3d;
@@ -75,7 +66,7 @@
   margin: auto;
 }
 
-/* Highlights */
+/* ========== Highlights ========== */
 .ct-highlights ul {
   list-style: none;
   max-width: 800px;
@@ -83,6 +74,9 @@
   padding: 0;
 }
 .ct-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
   padding: 12px;
   margin: 8px 0;
   background: #f9f9f9;
@@ -91,13 +85,18 @@
   transition: 0.3s;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
+.ct-highlights li::before {
+  content: "⭐"; /* icon added */
+  color: #8d1b3d;
+  font-size: 1.2rem;
+}
 .ct-highlights li:hover {
   background: #fff1f6;
   transform: translateX(6px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-/* Inclusions */
+/* ========== Inclusions ========== */
 .ct-grid {
   display: grid;
   gap: 20px;
@@ -111,6 +110,10 @@
   transition: 0.3s;
   border-top: 4px solid #8d1b3d;
 }
+.ct-card h3::before {
+  content: " ";
+  color: #8d1b3d;
+}
 .ct-card h3 {
   color: #8d1b3d;
   margin-bottom: 10px;
@@ -120,14 +123,16 @@
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Gallery */
+/* ========== Gallery ========== */
 .ct-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
 .ct-gallery-grid img {
   width: 100%;
+  height: 250px; /* fix image height */
+  object-fit: cover; /* ensures proper crop */
   border-radius: 12px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -137,7 +142,7 @@
   box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
 }
 
-/* CTA */
+/* ========== CTA ========== */
 .ct-cta {
   text-align: center;
   padding: 40px 20px;
@@ -147,48 +152,29 @@
 }
 .ct-cta h2 {
   color: #8d1b3d;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
 
-/* ================= Responsive ================= */
+/* ========== Responsive Breakpoints ========== */
 
-/* Tablet */
-@media (max-width: 1199px) {
-  .ct-hero-content h1 {
-    font-size: 2.5rem;
-  }
-  .ct-hero-content p {
-    font-size: 1.1rem;
-  }
-  .ct-container {
-    margin: 40px auto;
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
+/* Tablet (≤ 992px) */
+@media (max-width: 992px) {
   .ct-hero {
-    height: 65vh;
+    height: 70vh;
   }
   .ct-hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .ct-hero-content p {
     font-size: 1rem;
   }
-  .ct-btn {
-    padding: 10px 22px;
-    font-size: 0.95rem;
-  }
-  .ct-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
-/* Smallest Devices */
-@media (max-width: 480px) {
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
   .ct-hero {
-    height: 55vh;
-    padding: 0 10px;
+    height: 60vh;
+    padding: 0 15px;
   }
   .ct-hero-content h1 {
     font-size: 1.6rem;
@@ -196,11 +182,30 @@
   .ct-hero-content p {
     font-size: 0.9rem;
   }
-  .ct-btn {
-    padding: 8px 16px;
-    font-size: 0.85rem;
+  .ct-container {
+    margin: 40px auto;
+  }
+  .ct-gallery-grid img {
+    height: 180px;
+  }
+}
+
+/* Ultra Small Devices (≤ 300px) */
+@media (max-width: 300px) {
+  .ct-hero {
+    height: 50vh;
+  }
+  .ct-hero-content h1 {
+    font-size: 1.2rem;
+  }
+  .ct-hero-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
   .ct-container h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .ct-gallery-grid img {
+    height: 150px;
   }
 }

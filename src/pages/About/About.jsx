@@ -2,7 +2,6 @@ import React from "react";
 import "./About.css";
 import { Link } from "react-router-dom";
 import {
-  
   FaUmbrellaBeach,
   FaCity,
   FaTheaterMasks,
@@ -23,7 +22,7 @@ const About = () => {
         <div className="about-hero-content">
           <h1>About Us</h1>
           <p>
-            Adventure Time Tourism is a trusted tour operator in Qatar, offering
+            Gulf Dunes Tourism is a trusted tour operator in Qatar, offering
             carefully curated travel experiences that highlight the beauty and
             heritage of our nation.
           </p>
@@ -77,32 +76,32 @@ const About = () => {
         <h2>What We Offer</h2>
         <ul>
           <li>
-            <a href="/desert-safari">
+            <Link to="/desert-safari">
               <FaUmbrellaBeach className="service-icon" /> Desert Safari (Half &
               Full Day)
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/city-tour">
+            <Link to="/city-tour">
               <FaCity className="service-icon" /> City Tours of Doha
-            </a>
+            </Link>
           </li>
           <li>
-            <a style={{ cursor: "pointer" }}>
+            <Link to="/cultural-heritage">
               <FaTheaterMasks className="service-icon" /> Cultural Heritage
               Experiences
-            </a>
+            </Link>
           </li>
           <li>
-            <a style={{ cursor: "pointer" }}>
+            <Link to="/custom-itineraries">
               <FaPlaneDeparture className="service-icon" /> Custom Travel
               Itineraries
-            </a>
+            </Link>
           </li>
           <li>
-            <a style={{ cursor: "pointer" }}>
+            <Link to="/packages">
               <FaHotel className="service-icon" /> Luxury & Budget Packages
-            </a>
+            </Link>
           </li>
         </ul>
       </section>
@@ -149,9 +148,9 @@ const About = () => {
             Discover unforgettable experiences with our expert team. <br />
             Let us handle the details while you focus on creating memories.
           </p>
-        <Link to="/contact" className="btn-large">
-  Get in Touch
-</Link>
+          <Link to="/contact" className="btn-large">
+            Get in Touch
+          </Link>
         </div>
       </section>
     </div>

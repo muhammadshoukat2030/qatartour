@@ -50,8 +50,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  /* padding-top: 300px; */
-  padding: 30px 12%;
+  padding: 40px 12%;
   flex-wrap: wrap;
 }
 
@@ -82,15 +81,6 @@
   margin-bottom: 15px;
   color: #8d1b3d;
 }
-/* .about-text h2::after {
-  content: "";
-  display: block;
-  width: 190px;
-  height: 3px;
-  background: #8d1b3d;
-  margin: 10px auto 0;
-  border-radius: 2px;
-} */
 
 .about-text p {
   font-size: 1.02rem;
@@ -178,7 +168,6 @@
 .about-team {
   padding: 70px 10%;
   text-align: center;
-  /* background-color: rgb(241, 241, 241); */
 }
 
 .about-team h2 {
@@ -289,7 +278,9 @@
   box-shadow: 0 8px 18px rgba(141, 27, 61, 0.4);
 }
 
-/* ========== Responsive ========== */
+/* ========== Responsive Breakpoints ========== */
+
+/* Large Screens (PC/Desktop) */
 @media (max-width: 1200px) {
   .about-content {
     padding: 60px 8%;
@@ -300,6 +291,7 @@
   }
 }
 
+/* Tablet */
 @media (max-width: 992px) {
   .about-content {
     flex-direction: column;
@@ -330,24 +322,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  .about-hero {
-    height: 65vh;
-  }
-  .about-hero h1 {
-    font-size: 2rem;
-  }
-  .about-hero p {
-    font-size: 0.95rem;
-  }
-  .about-content {
-    padding: 40px 5%;
-  }
-  .team-member img {
-    height: 220px;
-  }
-}
-
+/* Mobile */
 @media (max-width: 576px) {
   .about-hero {
     height: 55vh;
@@ -382,34 +357,32 @@
   }
 }
 
-@media (max-width: 400px) {
-  .about-hero {
-    height: 50vh;
-    padding: 0 10px;
+/* ✅ Ultra Small Screens (≤ 250px) */
+@media (max-width: 250px) {
+  .about-attractions {
+    padding: 30px 3%;
   }
-  .about-hero h1 {
-    font-size: 1.4rem;
+
+  .about-attractions h2 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
   }
-  .about-hero p {
+
+  .about-attractions li {
     font-size: 0.85rem;
+    padding: 8px 0;
   }
-  .about-content {
-    padding: 20px 3%;
-  }
-  .about-text h2 {
-    font-size: 1.3rem;
-  }
-  .about-text p {
+
+  .about-attractions a {
     font-size: 0.85rem;
+    gap: 6px;
+    flex-wrap: wrap; /* icon upar & text neeche aa jayega */
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3;
   }
-  .about-image img {
-    height: 180px;
-  }
-  .team-member img {
-    height: 180px;
-  }
-  .btn-large {
-    padding: 12px 22px;
-    font-size: 0.9rem;
+
+  .service-icon {
+    font-size: 1rem; /* chhota icon */
   }
 }

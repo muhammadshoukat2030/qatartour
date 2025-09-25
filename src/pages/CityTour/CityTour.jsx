@@ -79,8 +79,8 @@ const CityTour = () => {
           <img src={assets.citytour_4} alt="City 4" />
           <img src={assets.citytour_5} alt="City 5" />
           <img src={assets.citytour_6} alt="City 6" />
-          <img src={assets.citytour_7} alt="City 7" />
-          <img src={assets.citytour_3} alt="City 8" />
+          <img src={assets.measeum} alt="City 7" />
+          <img src={assets.flagplaza} alt="City 8" />
         </div>
       </section>
 

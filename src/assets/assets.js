@@ -3,6 +3,7 @@ import header_img from './header_img.jpg'
 import logo from './logo.jpeg'
 import logo_1 from './logo_1.jpeg'
 import logo_2 from './logo_2.jpg'
+import logo_3 from './logo_3.png'
 import home from './home.jpeg'
 
 // ================= Employees =================
@@ -35,6 +36,7 @@ import desertsafari_7 from './desertsafari_7.jpeg'
 import desertsafari_8 from './desertsafari_8.jpeg'
 
 // ================= Doha Tour =================
+import duhatour_0 from './duhatour_0.jpeg'
 import duhatour_1 from './duhatour_1.jpeg'
 import duhatour_2 from './duhatour_2.jpeg'
 import duhatour_3 from './duhatour_3.jpeg'
@@ -73,6 +75,7 @@ import west_4 from './west_4.jpeg'
 import west_5 from './west_5.jpeg'
 
 // ================= Places =================
+
 import measeum from './measeum.jpeg'
 import islamicaet from './islamicaet.jpeg'
 import lusailqatar from './lusailqatar.jpeg'
@@ -104,6 +107,7 @@ export const assets = {
   logo,
   logo_1,
   logo_2,
+  logo_3,
   home,
 
   employee_1,
@@ -131,6 +135,7 @@ export const assets = {
   desertsafari_7,
   desertsafari_8,
 
+  duhatour_0,
   duhatour_1,
   duhatour_2,
   duhatour_3,
@@ -164,6 +169,7 @@ export const assets = {
   west_4,
   west_5,
 
+  qatarpackage,
   measeum,
   islamicaet,
   lusailqatar,
@@ -171,7 +177,8 @@ export const assets = {
   kataravillage,
   flagplaza,
 
-    qatarpackage,
+
+    
     duhatour,
   
   header_img,
