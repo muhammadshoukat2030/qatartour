@@ -11,7 +11,7 @@ const Home = () => {
         top: 0,
         behavior: "smooth", // smooth scroll karega
       });
-    }, 200); // 1s delay
+    }, 100);
   };
   return (
     <div className="home-page">
@@ -50,7 +50,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/west-tour" className="home-btn">
+              <Link to="/west-tour" className="home-btn" onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -63,7 +63,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/north-tour" className="home-btn">
+              <Link to="/north-tour" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -76,7 +76,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/city-tour" className="home-btn">
+              <Link to="/city-tour" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -89,7 +89,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/half-day" className="home-btn">
+              <Link to="/half-day" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -102,7 +102,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>8 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/full-day" className="home-btn">
+              <Link to="/full-day" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -115,7 +115,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>6-8 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/desert-safari" className="home-btn">
+              <Link to="/desert-safari" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -128,7 +128,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/doha-tourism" className="home-btn">
+              <Link to="/doha-tourism" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -141,7 +141,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>6-8 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/qatar-packages" className="home-btn">
+              <Link to="/qatar-packages" className="home-btn"onClick={handleClick}>
                 Learn More
               </Link>
             </div>
