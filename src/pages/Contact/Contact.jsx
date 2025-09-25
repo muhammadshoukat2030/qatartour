@@ -56,7 +56,7 @@ const Contact = () => {
         <div className="info-card">
           <i className="fas fa-phone"></i>
           <h3>Phone</h3>
-          <p>0097450715252</p>
+          <p>+97450715252</p>
         </div>
         <div className="info-card">
           <i className="fas fa-envelope"></i>
