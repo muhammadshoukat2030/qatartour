@@ -30,26 +30,22 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-     {/* Hero Section */}
-<header
-  className="contact-hero"
-  style={{
-    backgroundImage: `url(${assets.home})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center center",
-    backgroundRepeat: "no-repeat"
-  }}
->
-  <div className="overlay"></div>
-  <div className="hero-content-1">
-    <h1>Contact Us</h1>
-    <p>Get in touch for bookings and inquiries</p>
-  </div>
-</header>
-
-
-
-
+      {/* Hero Section */}
+      <header
+        className="contact-hero"
+        style={{
+          backgroundImage: `url(${assets.home})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="overlay"></div>
+        <div className="hero-content-1">
+          <h1>Contact Us</h1>
+          <p>Get in touch for bookings and inquiries</p>
+        </div>
+      </header>
 
       {/* Contact Info */}
       <section className="contact-info">
@@ -78,7 +74,12 @@ const Contact = () => {
             <input type="text" name="name" placeholder="Your Name" required />
           </div>
           <div className="form-group">
-            <input type="email" name="email" placeholder="Your Email" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
           </div>
 
           {/* City Selection */}
@@ -101,6 +102,7 @@ const Contact = () => {
               <option value="half-day">Half Day Tour</option>
               <option value="full-day">Full Day Tour</option>
               <option value="doha-tour">Doha Tourism</option>
+              <option value="doha-tour">Quad Biking</option>
               <option value="qatar-packages">Qatar Tour Packages</option>
               <option value="north-tour">North Tour</option>
               <option value="west-tour">West Tour</option>
@@ -110,21 +112,37 @@ const Contact = () => {
           {/* Date + Time + Guests */}
           <div className="form-row">
             <div className="form-group">
-              <input type="text" name="My location" placeholder="My location" required />
+              <input
+                type="text"
+                name="My location"
+                placeholder="My location"
+                required
+              />
             </div>
             <div className="form-group">
-              <input type="date" name="date"  required />
+              <input type="date" name="date" required />
             </div>
             <div className="form-group">
               <input type="time" name="time" required />
             </div>
             <div className="form-group">
-              <input type="number" name="guests" min="1" placeholder="Guests" required />
+              <input
+                type="number"
+                name="guests"
+                min="1"
+                placeholder="Guests"
+                required
+              />
             </div>
           </div>
 
           <div className="form-group">
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
           </div>
 
           <button type="submit" className="btn-primary">
