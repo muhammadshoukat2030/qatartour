@@ -181,7 +181,7 @@ const WestTour = () => {
                   <p>Golden dunes shining under the Arabian sun.</p>
                 </div>
                 <div className="slide">
-                  <img src={assets.duhatour_4} alt="Gallery 3" />
+                  <img src={assets.west_2} alt="Gallery 3" />
                   <p>West Desert’s unique rock formations and open skies.</p>
                 </div>
                 <div className="slide">
@@ -229,7 +229,7 @@ const WestTour = () => {
           </article>
 
           <article className="related-card">
-            <img src={assets.citytour_1} alt="City Highlights" />
+            <img src={assets.citytour_3} alt="City Highlights" />
             <div className="related-body">
               <h3>City Highlights</h3>
               <p>Discover Doha’s iconic skyline, souqs and museums.</p>

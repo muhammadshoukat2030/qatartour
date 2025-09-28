@@ -1,0 +1,195 @@
+/* Base Page */
+.quadbiking-page {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  line-height: 1.7;
+  background: #fff;
+}
+
+/* Hero */
+.quadbiking-hero {
+  position: relative;
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quadbiking-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.quadbiking-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 750px;
+  padding: 20px;
+}
+.quadbiking-hero-content h1 {
+  font-size: 3rem;
+  margin-top: 11rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+.quadbiking-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.quadbiking-hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Sections */
+.quadbiking-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+.quadbiking-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #8d1b3d;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.quadbiking-overview p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Highlights */
+.quadbiking-highlights ul {
+  list-style: none;
+  max-width: 800px;
+  margin: auto;
+  padding: 0;
+}
+.quadbiking-highlights li {
+  padding: 12px;
+  margin: 8px 0;
+  background: #f9f9f9;
+  border-left: 5px solid #8d1b3d;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.quadbiking-highlights li:hover {
+  background: #fff1f6;
+  transform: translateX(6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Cards & Grid */
+.quadbiking-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.quadbiking-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+  border-top: 4px solid #8d1b3d;
+}
+.quadbiking-card h3 {
+  color: #8d1b3d;
+  margin-bottom: 10px;
+}
+.quadbiking-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gallery */
+.quadbiking-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.quadbiking-gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.quadbiking-gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA */
+.quadbiking-cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #fff, #fdf3f6);
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.08);
+}
+.quadbiking-cta h2 {
+  color: #8d1b3d;
+}
+.quadbiking-cta-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================= Responsive ================= */
+
+/* Tablet */
+@media (max-width: 1199px) {
+  .quadbiking-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .quadbiking-hero-content p {
+    font-size: 1.1rem;
+  }
+  .quadbiking-container {
+    margin: 40px auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .quadbiking-hero {
+    height: 65vh;
+  }
+  .quadbiking-hero-content h1 {
+    font-size: 2rem;
+  }
+  .quadbiking-hero-content p {
+    font-size: 1rem;
+  }
+  .quadbiking-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Smallest Devices */
+@media (max-width: 480px) {
+  .quadbiking-hero {
+    height: 55vh;
+    padding: 0 10px;
+  }
+  .quadbiking-hero-content h1 {
+    font-size: 1.6rem;
+  }
+  .quadbiking-hero-content p {
+    font-size: 0.9rem;
+  }
+  .quadbiking-container h2 {
+    font-size: 1.6rem;
+  }
+}

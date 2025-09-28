@@ -6,6 +6,11 @@ import logo_2 from './logo_2.jpg'
 import logo_3 from './logo_3.png'
 import home from './home.jpeg'
 
+// ================= HomePage =================
+import mainpage_1 from './mainpage_1.jpeg'
+import mainpage_2 from './mainpage_2.jpeg'
+import mainpage_3 from './mainpage_3.jpeg'
+import mainpage_4 from './mainpage_4.jpeg'  
 // ================= Employees =================
 import employee_1 from './employee1.jpg'
 import employee_2 from './employee2.jpg'
@@ -74,6 +79,13 @@ import west_3 from './west_3.jpeg'
 import west_4 from './west_4.jpeg'
 import west_5 from './west_5.jpeg'
 
+// ================= Quad Biking =================
+import quadbiking_1 from './quadbiking_1.jpeg'
+import quadbiking_2 from './quadbiking_2.jpeg'
+import quadbiking_3 from './quadbiking_3.jpeg'
+import quadbiking_4 from './quadbiking_4.jpeg'
+import quadbiking_5 from './quadbiking_5.jpeg'
+
 // ================= Places =================
 
 import measeum from './measeum.jpeg'
@@ -103,12 +115,19 @@ import review_10 from './review_10.jpeg'
 
 
 
+
 export const assets = {
   logo,
   logo_1,
   logo_2,
   logo_3,
   home,
+ 
+  // ================= HomePage =================
+  mainpage_1,
+  mainpage_2,
+  mainpage_3,
+  mainpage_4,
 
   employee_1,
   employee_2,
@@ -162,6 +181,13 @@ export const assets = {
   north_3,
   north_4,
   north_5,
+
+  quadbiking_1,
+   quadbiking_2,
+    quadbiking_3,
+     quadbiking_4,
+      quadbiking_5,
+      
 
   west_1,
   west_2,

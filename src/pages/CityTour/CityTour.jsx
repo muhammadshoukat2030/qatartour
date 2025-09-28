@@ -10,7 +10,7 @@ const CityTour = () => {
       {/* Hero Section */}
       <header
         className="ct-hero"
-        style={{ backgroundImage: `url(${assets.citytour_1})` }}
+        style={{ backgroundImage: `url(${assets.citytour_3})` }}
       >
         <div className="ct-overlay"></div>
         <div className="ct-hero-content">

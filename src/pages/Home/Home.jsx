@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import { assets } from "../../assets/assets";
-// import BookNowBtn from "../../components/BookNowBtn/BookNowBtn";
 
 const Home = () => {
+  // Background images for slider
+  const images = [
+    assets.mainpage_3,
+    assets.mainpage_2,
+    assets.mainpage_4,
+    assets.mainpage_1,
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 5000); // har 5 sec baad change hoga
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   const handleClick = () => {
     setTimeout(() => {
       window.scrollTo({
@@ -13,15 +29,23 @@ const Home = () => {
       });
     }, 100);
   };
+
   return (
     <div className="home-page">
-      {/* Hero Section */}
-      <div
-        className="home-section-background"
-        style={{ backgroundImage: `url(${assets.header_img})` }}
-      >
+      {/* ✅ Hero Section with Slider */}
+      <div className="home-slider-hero">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className={`home-slide-bg ${
+              index === currentImage ? "active" : ""
+            }`}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
+        ))}
+
         <section className="home-hero">
-          <h1 className="home-hero-title">Gulf Dunes Tourism</h1>
+          <h1 className="home-hero-title">Welcome to GDT</h1>
           <p className="home-hero-text">
             Gulf Dunes Tourism is one of the best tour operators in Qatar. Our
             professional guides ensure you experience Qatar’s true beauty with
@@ -44,6 +68,32 @@ const Home = () => {
         <h2 className="home-section-title">Available Tours</h2>
         <div className="home-tour-cards">
           <div className="home-tour-card">
+            <img src={assets.citytour_3} alt="City Tour" />
+            <div className="home-tour-overlay">
+              <h3 className="home-tour-title">City Tour</h3>
+              <span className="home-stars">⭐⭐⭐⭐☆</span>
+              <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
+              <Link to="/city-tour" className="home-btn" onClick={handleClick}>
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          <div className="home-tour-card">
+            <img src={assets.halfday_1} alt="Desert Half Day" />
+            <div className="home-tour-overlay">
+              <h3 className="home-tour-title">Desert Half Day</h3>
+              <span className="home-stars">⭐⭐⭐⭐⭐</span>
+              <p>4 Hours</p>
+              <span className="flextime">Flexible</span>
+              <Link to="/half-day" className="home-btn" onClick={handleClick}>
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          <div className="home-tour-card">
             <img src={assets.west_1} alt="West Tour" />
             <div className="home-tour-overlay">
               <h3 className="home-tour-title">West Tour</h3>
@@ -63,33 +113,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/north-tour" className="home-btn"onClick={handleClick}>
-                Learn More
-              </Link>
-            </div>
-          </div>
-
-          <div className="home-tour-card">
-            <img src={assets.citytour_1} alt="City Tour" />
-            <div className="home-tour-overlay">
-              <h3 className="home-tour-title">City Tour</h3>
-              <span className="home-stars">⭐⭐⭐⭐☆</span>
-              <p>4 Hours</p>
-              <span className="flextime">Flexible</span>
-              <Link to="/city-tour" className="home-btn"onClick={handleClick}>
-                Learn More
-              </Link>
-            </div>
-          </div>
-
-          <div className="home-tour-card">
-            <img src={assets.halfday_1} alt="Desert Half Day" />
-            <div className="home-tour-overlay">
-              <h3 className="home-tour-title">Desert Half Day</h3>
-              <span className="home-stars">⭐⭐⭐⭐⭐</span>
-              <p>4 Hours</p>
-              <span className="flextime">Flexible</span>
-              <Link to="/half-day" className="home-btn"onClick={handleClick}>
+              <Link to="/north-tour" className="home-btn" onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -102,7 +126,20 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>8 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/full-day" className="home-btn"onClick={handleClick}>
+              <Link to="/full-day" className="home-btn" onClick={handleClick}>
+                Learn More
+              </Link>
+            </div>
+          </div>
+
+          <div className="home-tour-card">
+            <img src={assets.quadbiking_1} alt="Quad biking" />
+            <div className="home-tour-overlay">
+              <h3 className="home-tour-title">Quad biking</h3>
+              <span className="home-stars">⭐⭐⭐⭐☆</span>
+              <p>8 Hours</p>
+              <span className="flextime">Flexible</span>
+              <Link to="/Quad-biking" className="home-btn" onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -115,7 +152,11 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐☆</span>
               <p>6-8 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/desert-safari" className="home-btn"onClick={handleClick}>
+              <Link
+                to="/desert-safari"
+                className="home-btn"
+                onClick={handleClick}
+              >
                 Learn More
               </Link>
             </div>
@@ -128,7 +169,7 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>4 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/doha-tourism" className="home-btn"onClick={handleClick}>
+              <Link to="/doha-tourism" className="home-btn" onClick={handleClick}>
                 Learn More
               </Link>
             </div>
@@ -141,7 +182,11 @@ const Home = () => {
               <span className="home-stars">⭐⭐⭐⭐⭐</span>
               <p>6-8 Hours</p>
               <span className="flextime">Flexible</span>
-              <Link to="/qatar-packages" className="home-btn"onClick={handleClick}>
+              <Link
+                to="/qatar-packages"
+                className="home-btn"
+                onClick={handleClick}
+              >
                 Learn More
               </Link>
             </div>
@@ -169,7 +214,6 @@ const Home = () => {
             <div className="home-slide">
               <img src={assets.review_5} alt="Gallery 5" />
             </div>
-            {/* Duplicate for smooth loop */}
             <div className="home-slide">
               <img src={assets.review_6} alt="Gallery 6" />
             </div>
@@ -201,9 +245,7 @@ const Home = () => {
           <p>
             Gulf Dunes Tourism covers all the must-visit attractions of Doha
             including the Doha Corniche, Souq Waqif, Katara Cultural Village,
-            Pearl-Qatar, Lusail City, and the Museum of Islamic Art. These tours
-            give travelers a perfect mix of modern architecture, cultural
-            heritage, and scenic views of the city.
+            Pearl-Qatar, Lusail City, and the Museum of Islamic Art.
           </p>
         </details>
 
@@ -214,51 +256,40 @@ const Home = () => {
           </summary>
           <p>
             Booking with Gulf Dunes Tourism is simple and hassle-free. You can
-            reserve your Doha tour online, via WhatsApp(97450715252) by email
-            (gulfdunestourism@gmail.com )or through a direct phone call.
-            Flexible booking options make it easy for tourists to confirm their
-            trips in just a few minutes.
+            reserve your Doha tour online, via WhatsApp, email or through a
+            direct phone call.
           </p>
         </details>
 
         <details>
           <summary>
-            Could you share information about the various tour packages offered
-            by Gulf Dunes Tourism for exploring Doha?
+            Could you share information about the various tour packages offered?
           </summary>
           <p>
             Gulf Dunes Tourism offers a wide range of packages such as half-day
             city tours, full-day tours, desert safari adventures, cultural
-            experiences, and private customized trips. Each package is designed
-            to highlight the best of Doha while providing comfort, convenience,
-            and memorable experiences.
+            experiences, and private customized trips.
           </p>
         </details>
 
         <details>
           <summary>
-            In what ways do Gulf Dunes Tourism’s Doha tours stand out compared
-            to other travel companies?
+            In what ways do Gulf Dunes Tourism’s Doha tours stand out?
           </summary>
           <p>
             What makes Gulf Dunes Tourism unique is the combination of
             professional tour guides, luxury vehicles, personalized itineraries,
-            and authentic Qatari experiences. Unlike generic tours, Gulf Dunes
-            focuses on delivering a premium and memorable journey for every
-            traveler.
+            and authentic Qatari experiences.
           </p>
         </details>
 
         <details>
           <summary>
-            How can I reach Gulf Dunes Tourism to ask questions or get more
-            details about their Doha tour services?
+            How can I reach Gulf Dunes Tourism?
           </summary>
           <p>
-            For inquiries, you can contact Gulf Dunes Tourism by phone,
-            WhatsApp, email, or through the official website inquiry form. Their
-            customer support team is available to assist with booking, package
-            details, and any special requests.
+            You can contact Gulf Dunes Tourism by phone, WhatsApp, email, or
+            through the official website inquiry form.
           </p>
         </details>
       </section>

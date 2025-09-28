@@ -28,9 +28,10 @@ function Navbar() {
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
+        <li><Link to="/city-tour" onClick={() => setMenuOpen(false)}>City Tour</Link></li>
         <li><Link to="/west-tour" onClick={() => setMenuOpen(false)}>West Tour</Link></li>
         <li><Link to="/north-tour" onClick={() => setMenuOpen(false)}>North Tour</Link></li>
-        <li><Link to="/city-tour" onClick={() => setMenuOpen(false)}>City Tour</Link></li>
+
 
         {/* Dropdown */}
         <li className={`dropdown ${dropdownOpen ? "active" : ""}`}>
@@ -44,6 +45,7 @@ function Navbar() {
             <li><Link to="/desert-safari" onClick={() => setMenuOpen(false)}>Desert Safari</Link></li>
             <li><Link to="/half-day" onClick={() => setMenuOpen(false)}>Half Day</Link></li>
             <li><Link to="/full-day" onClick={() => setMenuOpen(false)}>Full Day</Link></li>
+            <li><Link to="/Quad-biking" onClick={() => setMenuOpen(false)}>Quad biking</Link></li>
             <li><Link to="/doha-tourism" onClick={() => setMenuOpen(false)}>Doha Tourism</Link></li>
             <li><Link to="/qatar-packages" onClick={() => setMenuOpen(false)}>Qatar Tour Packages</Link></li>
           </ul>

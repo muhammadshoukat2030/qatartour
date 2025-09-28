@@ -15,6 +15,7 @@ import CityTour from "./pages/CityTour/CityTour";
 import DesertSafari from "./pages/DesertSafari/DesertSafari";
 import HalfDay from "./pages/HalfDay/HalfDay";
 import FullDay from "./pages/FullDay/FullDay";
+import QuadBiking from "./pages/QuadBiking/QuadBiking";
 import DohaTourism from "./pages/DohaTourism/DohaTourism";
 import QatarPackages from "./pages/QatarPackages/QatarPackages";
 import Contact from "./pages/Contact/Contact";
@@ -38,6 +39,7 @@ function App() {
         <Route path="/desert-safari" element={<DesertSafari />} />
         <Route path="/half-day" element={<HalfDay />} />
         <Route path="/full-day" element={<FullDay />} />
+        <Route path="/Quad-biking" element={<QuadBiking />} />
         <Route path="/doha-tourism" element={<DohaTourism />} />
         <Route path="/qatar-packages" element={<QatarPackages />} />
 

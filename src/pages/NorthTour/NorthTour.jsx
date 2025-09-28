@@ -180,7 +180,7 @@ const NorthTour = () => {
           </article>
 
           <article className="north-related-card">
-            <img src={assets.citytour_1} alt="City Highlights" />
+            <img src={assets.citytour_3} alt="City Highlights" />
             <div className="north-related-body">
               <h3>City Highlights</h3>
               <p>
