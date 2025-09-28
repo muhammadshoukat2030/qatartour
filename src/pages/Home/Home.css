@@ -131,7 +131,7 @@
 
 @media (max-width: 480px) {
   .home-hero {
-    top: 40%; /* ✅ Mobile me aur upar */
+    top: 45%; /* ✅ Mobile me aur upar */
   }
   .home-hero-title {
     font-size: 1.6rem;
