@@ -45,7 +45,7 @@ const Home = () => {
         ))}
 
         <section className="home-hero">
-          <h1 className="home-hero-title">Welcome to GDT</h1>
+          <h1 className="home-hero-title">Welcome To Gulf Dunes Tourism </h1>
           <p className="home-hero-text">
             Gulf Dunes Tourism is one of the best tour operators in Qatar. Our
             professional guides ensure you experience Qatar’s true beauty with
