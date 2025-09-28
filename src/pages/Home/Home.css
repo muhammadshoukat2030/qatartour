@@ -10,7 +10,7 @@
 /* ========== Hero Section ========== */
 .home-slider-hero {
   position: relative;
-  height: 90vh;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -115,7 +115,7 @@
 /* ========== Responsive ========== */
 @media (max-width: 768px) {
   .home-hero {
-    top: 42%; /* ✅ Tablet ke liye thoda aur upar */
+    top: 45%; /* ✅ Tablet ke liye thoda aur upar */
   }
   .home-hero-title {
     font-size: 2.2rem;
