@@ -48,7 +48,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 35px;
+  gap: 25px;
   transition: all 0.3s ease-in-out;
 }
 .nav-links li a,
@@ -207,7 +207,7 @@
   flex-direction: column;
   background: rgba(20, 30, 48, 0.95);
   width: 70%;
-  height: 100vh;
+  height: 105vh;
   padding: 40px 0;
   gap: 25px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
