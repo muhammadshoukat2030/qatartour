@@ -1,12 +1,13 @@
-/* Base Page */
+/* ========== Base Page ========== */
 .quadbiking-page {
   font-family: "Poppins", sans-serif;
   color: #222;
   line-height: 1.7;
   background: #fff;
+  overflow-x: hidden;
 }
 
-/* Hero */
+/* ========== Hero Section ========== */
 .quadbiking-hero {
   position: relative;
   height: 95vh;
@@ -46,7 +47,7 @@
   flex-wrap: wrap;
 }
 
-/* Sections */
+/* ========== Sections ========== */
 .quadbiking-container {
   width: 90%;
   max-width: 1200px;
@@ -65,7 +66,7 @@
   margin: auto;
 }
 
-/* Highlights */
+/* ========== Highlights ========== */
 .quadbiking-highlights ul {
   list-style: none;
   max-width: 800px;
@@ -87,7 +88,7 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
-/* Cards & Grid */
+/* ========== Cards & Grid ========== */
 .quadbiking-grid {
   display: grid;
   gap: 20px;
@@ -110,7 +111,7 @@
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Gallery */
+/* ========== Gallery ========== */
 .quadbiking-gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -127,7 +128,7 @@
   box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
 }
 
-/* CTA */
+/* ========== CTA ========== */
 .quadbiking-cta {
   text-align: center;
   padding: 40px 20px;
@@ -148,10 +149,14 @@
 
 /* ================= Responsive ================= */
 
-/* Tablet */
+/* ========== Large Desktop / PC (>=1200px) ========== */
+/* Already default styles cover this */
+
+/* ========== Tablet (768px - 1199px) ========== */
 @media (max-width: 1199px) {
   .quadbiking-hero-content h1 {
     font-size: 2.5rem;
+    margin-top: 8rem;
   }
   .quadbiking-hero-content p {
     font-size: 1.1rem;
@@ -161,13 +166,14 @@
   }
 }
 
-/* Mobile */
+/* ========== Mobile (480px - 767px) ========== */
 @media (max-width: 767px) {
   .quadbiking-hero {
     height: 65vh;
   }
   .quadbiking-hero-content h1 {
     font-size: 2rem;
+    margin-top: 5rem;
   }
   .quadbiking-hero-content p {
     font-size: 1rem;
@@ -175,21 +181,35 @@
   .quadbiking-grid {
     grid-template-columns: 1fr;
   }
+  .quadbiking-gallery-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Smallest Devices */
-@media (max-width: 480px) {
+/* ========== Smallest Devices / SM (250px - 479px) ========== */
+@media (max-width: 479px) {
   .quadbiking-hero {
     height: 55vh;
     padding: 0 10px;
   }
   .quadbiking-hero-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin-top: 3rem;
   }
   .quadbiking-hero-content p {
     font-size: 0.9rem;
   }
   .quadbiking-container h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  .quadbiking-grid,
+  .quadbiking-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .quadbiking-card {
+    padding: 15px;
+  }
+  .quadbiking-cta {
+    padding: 30px 15px;
   }
 }
