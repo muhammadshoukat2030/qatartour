@@ -10,7 +10,7 @@ const Contact = () => {
     const form = e.target;
     const data = new FormData(form);
 
-    const response = await fetch("https://formspree.io/f/xjkedqry", {
+    const response = await fetch("https://formspree.io/f/xldpgvjo", {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
