@@ -11,7 +11,7 @@
 /* ========== Hero Section ========== */
 .home-slider-hero {
   position: relative;
-  height: 95vh;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -37,7 +37,7 @@
   z-index: 2;
   text-align: center;
   color: #fff;
-  top: 80%;
+  top: 65%;
   transform: translateY(-50%);
   padding: 0 15px;
 }
@@ -83,6 +83,7 @@
   }
   .home-hero-text {
     font-size: 1rem;
+
   }
 }
 
@@ -92,6 +93,7 @@
   }
   .home-hero-text {
     font-size: 0.9rem;
+    /* top: 50%; */
   }
 }
 
@@ -581,7 +583,7 @@
     font-size: 1rem;
   }
   .home-tour-card img {
-    height: 220px;
+    height: 320px;
   }
   .home-mission, .home-cta {
     padding: 40px 20px;
@@ -594,8 +596,9 @@
     height: 55vh;
   }
   .home-hero {
-    margin-top: 10rem;
+    margin-top: 8rem;
     padding: 15px;
+    padding-bottom: 60px;
   }
   .home-hero-title {
     font-size: 1.8rem;
@@ -618,10 +621,10 @@
     height: 45vh;
   }
   .home-hero {
-    margin-top: 7rem;
+    margin-top: 6rem;
   }
   .home-hero-title {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
   }
   .home-hero-text {
