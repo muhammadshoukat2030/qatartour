@@ -262,7 +262,7 @@
 }
 
 /* 💻 Large Devices (Desktops: 768px – 1199px) */
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
   .doha-tourism-hero {
     height: 95vh;
   }
@@ -276,7 +276,7 @@
     font-size: 1rem;
     padding: 12px 24px;
   }
-}
+} */
 
 /* 🖥️ Extra Large Devices (Desktops ≥ 1200px) */
 @media (min-width: 1200px) {
