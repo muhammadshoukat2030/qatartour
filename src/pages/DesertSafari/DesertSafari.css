@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 7rem;
 }
 .dsf-overlay {
   position: absolute;
@@ -42,34 +43,6 @@
   gap: 1rem;
   justify-content: center;
 }
-
-/* Buttons */
-/* .dsf-btn {
-  padding: 12px 28px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-} */
-/* .dsf-btn-primary {
-  background: #8d1b3d;
-  color: #fff;
-}
-.dsf-btn-primary:hover {
-  background: #721330;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(141, 27, 61, 0.4);
-}
-.dsf-btn-outline {
-  border: 2px solid #fff;
-  color: #fff;
-}
-.dsf-btn-outline:hover {
-  background: #fff;
-  color: #8d1b3d;
-  border-color: #8d1b3d;
-} */
 
 /* Sections */
 .dsf-container {
@@ -163,14 +136,23 @@
 .dsf-cta h2 {
   color: #8d1b3d;
 }
-/* .dsf-cta-actions {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-} */
 
 /* Responsive */
+
+/* Large Tablet */
+@media (max-width: 1024px) {
+  .dsf-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .dsf-hero-content p {
+    font-size: 1.1rem;
+  }
+  .dsf-container {
+    width: 95%;
+  }
+}
+
+/* Tablet */
 @media (max-width: 768px) {
   .dsf-hero-content h1 {
     font-size: 2rem;
@@ -178,7 +160,58 @@
   .dsf-hero-content p {
     font-size: 1rem;
   }
-  .dsf-btn {
-    padding: 10px 20px;
+  .dsf-grid {
+    gap: 15px;
+  }
+  .dsf-gallery-grid {
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .dsf-hero {
+    height: 60vh;
+    padding-top: 3.5rem;
+  }
+  .dsf-hero-content h1 {
+    font-size: 1.5rem;
+  }
+  .dsf-hero-content p {
+    font-size: 0.9rem;
+  }
+  .dsf-highlights li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  .dsf-card {
+    padding: 15px;
+  }
+}
+
+/* Extra Small Screen */
+@media (max-width: 320px) {
+  .dsf-hero {
+    height: 60vh;
+     padding-top: 3.5rem;
+  }
+  .dsf-hero-content h1 {
+    font-size: 1.3rem;
+  }
+  .dsf-hero-content p {
+    font-size: 0.8rem;
+  }
+  .dsf-highlights li {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  .dsf-card {
+    padding: 12px;
+  }
+  .dsf-grid {
+    grid-template-columns: 1fr;
+  }
+  .dsf-gallery-grid {
+    grid-template-columns: 1fr;
   }
 }

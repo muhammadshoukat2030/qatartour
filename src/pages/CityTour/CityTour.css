@@ -10,7 +10,7 @@
 /* ========== Hero ========== */
 .ct-hero {
   position: relative;
-  height: 90vh;
+  height: 95vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -160,7 +160,7 @@
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
   .ct-hero {
-    height: 70vh;
+    height: 60vh;
   }
   .ct-hero-content h1 {
     font-size: 2.2rem;
@@ -174,7 +174,8 @@
 @media (max-width: 576px) {
   .ct-hero {
     height: 60vh;
-    padding: 0 15px;
+    padding-top: 3rem;
+    padding: 0 1px;
   }
   .ct-hero-content h1 {
     font-size: 1.6rem;
@@ -193,7 +194,8 @@
 /* Ultra Small Devices (≤ 300px) */
 @media (max-width: 300px) {
   .ct-hero {
-    height: 50vh;
+    height: 60vh;
+    padding-top: 3.5rem;
   }
   .ct-hero-content h1 {
     font-size: 1.2rem;

@@ -16,10 +16,12 @@ const CityTour = () => {
         <div className="ct-hero-content">
           <h1>Qatar City Tour</h1>
           <p className="ct-lead">
-            Discover Doha’s vibrant culture, stunning skyline, and iconic attractions in this luxury city tour.
+            Discover Doha’s culture, skyline, and iconic attractions in this
+            tour.
           </p>
+
           <div className="ct-hero-actions">
-            <ContactAbout/>
+            <ContactAbout />
           </div>
         </div>
       </header>
@@ -28,8 +30,11 @@ const CityTour = () => {
       <section className="ct-overview ct-container">
         <h2>Overview</h2>
         <p>
-          Experience Doha like never before. From the modern architectural marvels of West Bay to the cultural charm of Souq Waqif, this tour offers a perfect mix of tradition and modernity.
-          Enjoy breathtaking views along the Corniche, explore Katara Cultural Village, and capture unforgettable memories across the capital.
+          Experience Doha like never before. From the modern architectural
+          marvels of West Bay to the cultural charm of Souq Waqif, this tour
+          offers a perfect mix of tradition and modernity. Enjoy breathtaking
+          views along the Corniche, explore Katara Cultural Village, and capture
+          unforgettable memories across the capital.
         </p>
       </section>
 
@@ -37,7 +42,10 @@ const CityTour = () => {
       <section className="ct-highlights ct-container">
         <h2>Tour Highlights</h2>
         <ul>
-          <li>Walk along West Bay and  Doha Corniche Drive with stunning skyline views</li>
+          <li>
+            Walk along West Bay and Doha Corniche Drive with stunning skyline
+            views
+          </li>
           <li>Explore the lively Souq Waqif traditional market</li>
           <li>Visit the Museum of Islamic Art</li>
           <li>Drive through The Pearl-Qatar island</li>
@@ -87,9 +95,8 @@ const CityTour = () => {
       {/* CTA */}
       <section className="ct-cta ct-container">
         <h2>Ready to Explore Doha?</h2>
-            <ContactAbout/>
+        <ContactAbout />
       </section>
-  
     </div>
   );
 };

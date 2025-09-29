@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* padding-top: 7rem; */
 }
 .quadbiking-overlay {
   position: absolute;
@@ -169,7 +170,7 @@
 /* ========== Mobile (480px - 767px) ========== */
 @media (max-width: 767px) {
   .quadbiking-hero {
-    height: 65vh;
+     height: 50vh;
   }
   .quadbiking-hero-content h1 {
     font-size: 2rem;
@@ -189,7 +190,7 @@
 /* ========== Smallest Devices / SM (250px - 479px) ========== */
 @media (max-width: 479px) {
   .quadbiking-hero {
-    height: 55vh;
+     height: 50vh;
     padding: 0 10px;
   }
   .quadbiking-hero-content h1 {

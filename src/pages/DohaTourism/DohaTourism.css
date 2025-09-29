@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 7rem;
 }
 
 .doha-tourism-overlay {
@@ -190,8 +191,9 @@
 /* 📱 Extra Small Devices (250px – 320px) */
 @media (max-width: 320px) {
   .doha-tourism-hero {
-    height: 45vh;
+    height: 60vh;
     padding: 0 8px;
+     padding-top: 3.5rem;
   }
   .doha-tourism-hero-content h1 {
     font-size: 1.4rem;
@@ -220,7 +222,8 @@
 /* 📱 Small Devices (Phones: 321px – 480px) */
 @media (max-width: 480px) {
   .doha-tourism-hero {
-    height: 55vh;
+    height: 60vh;
+     padding-top: 3.5rem;
   }
   .doha-tourism-hero-content h1 {
     font-size: 1.8rem;
@@ -241,6 +244,7 @@
 @media (max-width: 767px) {
   .doha-tourism-hero {
     height: 60vh;
+     padding-top: 3.5rem;
   }
   .doha-tourism-hero-content h1 {
     font-size: 2.2rem;
@@ -260,7 +264,7 @@
 /* 💻 Large Devices (Desktops: 768px – 1199px) */
 @media (max-width: 1199px) {
   .doha-tourism-hero {
-    height: 70vh;
+    height: 95vh;
   }
   .doha-tourism-hero-content h1 {
     font-size: 2.5rem;
@@ -277,7 +281,8 @@
 /* 🖥️ Extra Large Devices (Desktops ≥ 1200px) */
 @media (min-width: 1200px) {
   .doha-tourism-hero {
-    height: 75vh;
+    height: 95vh;
+    padding-top: 7rem;
   }
   .doha-tourism-hero-content h1 {
     font-size: 3rem;

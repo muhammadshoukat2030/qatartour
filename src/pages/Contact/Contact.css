@@ -8,7 +8,7 @@
 /* Hero */
 .contact-hero {
   position: relative;
-  height: 85vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -227,7 +227,8 @@
 /* Mobile */
 @media (max-width: 768px) {
   .contact-hero {
-    height: 70vh;
+    height: 60vh;
+    padding-top: 3.5rem;
   }
   .hero-content-1 h1 {
     font-size: 2rem;
@@ -244,6 +245,7 @@
 @media (max-width: 480px) {
   .contact-hero {
     height: 60vh;
+     padding-top: 3.5rem;
   }
   .hero-content-1 h1 {
     font-size: 1.6rem;
@@ -256,7 +258,8 @@
 /* Ultra Small (<=320px) */
 @media (max-width: 320px) {
   .contact-hero {
-    height: 55vh;
+    height: 60vh;
+     padding-top: 3.5rem;
   }
   .hero-content-1 h1 {
     font-size: 1.3rem;

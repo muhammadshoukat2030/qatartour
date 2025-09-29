@@ -9,12 +9,13 @@
 /* ================= Hero Section ================= */
 .qtrpkg-hero {
   position: relative;
-  height: 75vh;
+  height: 95vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 7rem;
 }
 
 .qtrpkg-overlay {
@@ -186,7 +187,7 @@
 
 @media (max-width: 480px) {
   .qtrpkg-hero {
-    height: 55vh;
+    height: 60vh;
   }
   .qtrpkg-hero-content h1 {
     font-size: 1.8rem;

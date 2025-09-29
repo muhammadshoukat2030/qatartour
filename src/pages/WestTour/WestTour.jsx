@@ -17,11 +17,10 @@ const WestTour = () => {
         <div className="west-hero-content">
           <h1>West Desert Tour — Dunes & Heritage</h1>
           <p className="lead">
-            Discover Qatar’s golden dunes, desert camps, and unique rock
-            formations. A perfect blend of adventure and culture, this tour lets
-            you enjoy breathtaking landscapes while exploring Qatar’s rich
-            traditions.
+            Explore Qatar’s dunes and desert camps. Adventure and culture in one
+            tour.
           </p>
+
           <div className="hero-actions">
             <ContactAbout />
           </div>

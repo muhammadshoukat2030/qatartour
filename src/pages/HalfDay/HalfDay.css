@@ -9,12 +9,13 @@
 /* Hero */
 .hd-hero {
   position: relative;
-  height: 80vh;
+  height: 95vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 7rem;
 }
 .hd-overlay {
   position: absolute;
@@ -35,7 +36,7 @@
 }
 .hd-hero-content p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 .hd-hero-actions {
@@ -191,10 +192,11 @@
 /* Mobile */
 @media (max-width: 767px) {
   .hd-hero {
-    height: 65vh;
+    height: 60vh;
+    
   }
   .hd-hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .hd-hero-content p {
     font-size: 1rem;
@@ -211,11 +213,12 @@
 /* Smallest Devices */
 @media (max-width: 480px) {
   .hd-hero {
-    height: 55vh;
-    padding: 0 10px;
+    height: 60vh;
+    padding-bottom: 34px;
   }
   .hd-hero-content h1 {
     font-size: 1.6rem;
+    /* padding-top: 3rem; */
   }
   .hd-hero-content p {
     font-size: 0.9rem;
