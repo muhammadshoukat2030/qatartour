@@ -47,7 +47,7 @@ function Navbar() {
             <li><Link to="/desert-safari" onClick={() => setMenuOpen(false)}>Desert Safari</Link></li>
             
         
-            <li><Link to="/Quad-biking" onClick={() => setMenuOpen(false)}>Quad biking</Link></li>
+            <li><Link to="/quad-biking" onClick={() => setMenuOpen(false)}>Quad biking</Link></li>
             <li><Link to="/doha-tourism" onClick={() => setMenuOpen(false)}>Doha Tourism</Link></li>
             <li><Link to="/qatar-packages" onClick={() => setMenuOpen(false)}>Qatar Tour Packages</Link></li>
           </ul>

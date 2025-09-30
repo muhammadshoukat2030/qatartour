@@ -39,7 +39,7 @@ function App() {
         <Route path="/desert-safari" element={<DesertSafari />} />
         <Route path="/half-day" element={<HalfDay />} />
         <Route path="/full-day" element={<FullDay />} />
-        <Route path="/Quad-biking" element={<QuadBiking />} />
+       <Route path="/quad-biking" element={<QuadBiking />} />
         <Route path="/doha-tourism" element={<DohaTourism />} />
         <Route path="/qatar-packages" element={<QatarPackages />} />
 
