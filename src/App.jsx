@@ -20,6 +20,7 @@ import DohaTourism from "./pages/DohaTourism/DohaTourism";
 import QatarPackages from "./pages/QatarPackages/QatarPackages";
 import Contact from "./pages/Contact/Contact";
 import CallButton from "./components/CallButton/CallButton";
+import Sitemap from "../public/sitemap.xml";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
        <Route path="/quad-biking" element={<QuadBiking />} />
         <Route path="/doha-tourism" element={<DohaTourism />} />
         <Route path="/qatar-packages" element={<QatarPackages />} />
+        <Route path="/sitemap" element={<Sitemap/>} />
 
         <Route path="/contact" element={<Contact />} />
       </Routes>
