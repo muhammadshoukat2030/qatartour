@@ -3,55 +3,55 @@
   
   <!-- Main Pages -->
   <url>
-    <loc>https://gulfdunestourism.com/</loc>
+    <loc>https://www.gulfdunestourism.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/about</loc>
+    <loc>https://www.gulfdunestourism.com/about</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/contact</loc>
+    <loc>https://www.gulfdunestourism.com/contact</loc>
     <priority>0.7</priority>
   </url>
 
   <!-- Tours -->
   <url>
-    <loc>https://gulfdunestourism.com/city-tour</loc>
+    <loc>https://www.gulfdunestourism.com/city-tour</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/half-day</loc>
+    <loc>https://www.gulfdunestourism.com/half-day</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/full-day</loc>
+    <loc>https://www.gulfdunestourism.com/full-day</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/west-tour</loc>
+    <loc>https://www.gulfdunestourism.com/west-tour</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/north-tour</loc>
+    <loc>https://www.gulfdunestourism.com/north-tour</loc>
     <priority>0.7</priority>
   </url>
 
   <!-- Desert Safari Dropdown -->
   <url>
-    <loc>https://gulfdunestourism.com/desert-safari</loc>
+    <loc>https://www.gulfdunestourism.com/desert-safari</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/quad-biking</loc>
+    <loc>https://www.gulfdunestourism.com/quad-biking</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/doha-tourism</loc>
+    <loc>https://www.gulfdunestourism.com/doha-tourism</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gulfdunestourism.com/qatar-packages</loc>
+    <loc>https://www.gulfdunestourism.com/qatar-packages</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
